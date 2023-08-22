@@ -24,7 +24,6 @@ class Emp(models.Model):
     role = models.ForeignKey(Role,on_delete=models.CASCADE)
     phone = models.IntegerField(default=0)
     hire_date = models.DateField()
-    # hire_date = models.DateField(("Date"), default=date.today)
-
+    
     def __str__(self):
         return "%s %s %s" %(self.fname,self.lname,self.phone)
